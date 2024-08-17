@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow">
+                <div class="card-body">
+                    <h2 class="card-title text-center mb-4">Predict SQL Command - SQLShield</h2>
+                    <form method="POST" action="{{ url_for('predictor') }}">
+                        <div class="form-group">
+                            <label for="sql_command">SQL Command</label>
+                            <textarea class="form-control" id="sql_command" name="sql_command" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block mt-4">Predict</button>
+                    </form>
+                    {% if result is not none %}
+                    <div class="mt-4">
+                        <h4>Prediction Result:</h4>
+                        <p class="text-primary">{{ result }}</p>
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

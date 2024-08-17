@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block title %}Help - SQLSheild{% endblock %}
+
+{% block body_class %}help-page{% endblock %}
+
+{% block content %}
+<div class="help-container">
+    <center><h1>Help & FAQ</h1></center>
+    <div class="faq-section">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-item">
+            <h4>1. What is SQL Injection?</h4>
+            <p>SQL Injection is a code injection technique that exploits a vulnerability in a web application's software by injecting malicious SQL statements into an input field. It allows attackers to execute arbitrary SQL code on the database server, potentially compromising the security of the data.</p>
+        </div>
+        <div class="faq-item">
+            <h4>2. How can I prevent SQL Injection attacks?</h4>
+            <p>Preventing SQL Injection involves using parameterized queries or prepared statements, validating and sanitizing user inputs, and employing least privilege principles for database access. It's crucial to follow secure coding practices to mitigate the risk of SQL Injection vulnerabilities.</p>
+        </div>
+        <div class="faq-item">
+            <h4>3. How to use the website?</h4>
+            <p>1. Register: Create an account by providing your email and password.</p>
+            <p>2. Login: Access the Predictor page after logging in and input SQL commands to check if they are malicious or legitimate.</p>
+        </div>
+    </div>
+</div>
+{% endblock %}
