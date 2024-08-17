@@ -1,7 +1,7 @@
-# SQLMan - A SQL Injection Attack Detector
+# SQLShield - A SQL Injection Attack Detector
 
 ## Description
-SQLMan is a web application designed to detect SQL injection attacks. It features a user-friendly interface with registration, login, and prediction functionalities to determine whether a SQL command is legitimate or malicious.
+SQLShield is a web application designed to detect SQL injection attacks. It features a user-friendly interface with registration, login, and prediction functionalities to determine whether a SQL command is legitimate or malicious.
 
 ## Features
 - **Registration and Login:** Secure user authentication system.
